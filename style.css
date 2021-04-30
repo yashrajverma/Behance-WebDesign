@@ -87,7 +87,10 @@ nav ul li a{
     
     }
     .dots{
-        overflow: hidden;
+        position: absolute;
+        top: 35%;
+        right: 8%;
+        transform: translate(-40%,-8%);
     }
 }
 .fa-shopping-bag{
