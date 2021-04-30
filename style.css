@@ -10,6 +10,7 @@
     background-size: cover;
     background-position: fixed;
     background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 .header nav {
     display: flex;
@@ -57,12 +58,20 @@ nav ul li a{
     cursor: pointer;
 
 }
+.dots{
+    position: absolute;
+    top: 40%;
+    right: 14%;
+    transform: translate(-50%,-14%);
+    width: 0px;
+}
 @media(max-width:700px){
     .text-box h1{
         font-size: 2.5rem;
         font-weight: 700;
         
     }
+ 
     .text-box button{
         color: white;
         border-radius: 5px;
@@ -72,6 +81,9 @@ nav ul li a{
         padding: 10px 20px;
         cursor: pointer;
     
+    }
+    .dots{
+        overflow: hidden;
     }
 }
 .fa-shopping-bag{
@@ -361,13 +373,17 @@ img{
 p{
     color: gray;
     margin: 10px 0;
-}ul li{
+}
+.links ul li{
     color: white;
     list-style: none;
 }
 .socials ul li{
     display: inline-block;
+    padding: 0px 10px;
     text-align: center;
+    color: white;
+    margin-bottom: 20px;
 }
 .arrow-down {
     width: 0;
